@@ -62,28 +62,31 @@ const config = {
     }),
   ],
   module: {
-    loaders: [
-      {
-        test: /[\\\/]app\.js$/,
-        loader: path.join(__dirname, './lib/routes-loader.js'),
-      }, {
-        test: /\.json$/,
-        loader: 'json-loader',
-      }, {
-        test: /\.txt$/,
-        loader: 'raw-loader',
-      }, {
-        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
-        loader: 'url-loader?limit=10000',
-      }, {
-        test: /\.(eot|ttf|wav|mp3)$/,
-        loader: 'file-loader',
-      },
-    ],
+    loaders: [{
+      test: /[\\\/]app\.js$/,
+      loader: path.join(__dirname, './lib/routes-loader.js'),
+    }, {
+      test: /\.json$/,
+      loader: 'json-loader',
+    }, {
+      test: /\.txt$/,
+      loader: 'raw-loader',
+    }, {
+      test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
+      loader: 'url-loader?limit=10000',
+    }, {
+      test: /\.(eot|ttf|wav|mp3)$/,
+      loader: 'file-loader',
+    }, {
+      test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+      loader: 'file-loader?name=fonts/[name].[ext]',
+    } ],
   },
   postcss: function plugins(bundler) {
     return [
-      require('postcss-import')({ addDependencyTo: bundler }),
+      require('postcss-import')({
+        addDependencyTo: bundler
+      }),
       require('precss')(),
       require('autoprefixer')({
         browsers: AUTOPREFIXER_BROWSERS,
@@ -128,22 +131,19 @@ const appConfig = merge({}, config, {
           plugins: ['react-transform'],
           extra: {
             'react-transform': {
-              transforms: [
-                {
-                  transform: 'react-transform-hmr',
-                  imports: ['react'],
-                  locals: ['module'],
-                }, {
-                  transform: 'react-transform-catch-errors',
-                  imports: ['react', 'redbox-react'],
-                },
-              ],
+              transforms: [{
+                transform: 'react-transform-hmr',
+                imports: ['react'],
+                locals: ['module'],
+              }, {
+                transform: 'react-transform-catch-errors',
+                imports: ['react', 'redbox-react'],
+              }, ],
             },
           },
         },
       }) : JS_LOADER,
-      ...config.module.loaders,
-      {
+      ...config.module.loaders, {
         test: /\.scss$/,
         loaders: ['style-loader', 'css-loader', 'postcss-loader'],
       },
@@ -169,13 +169,14 @@ const pagesConfig = merge({}, config, {
   },
   externals: /^[a-z][a-z\.\-\/0-9]*$/i,
   plugins: config.plugins.concat([
-    new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 1 }),
+    new webpack.optimize.LimitChunkCountPlugin({
+      maxChunks: 1
+    }),
   ]),
   module: {
     loaders: [
       JS_LOADER,
-      ...config.module.loaders,
-      {
+      ...config.module.loaders, {
         test: /\.scss$/,
         loaders: ['css-loader', 'postcss-loader'],
       },

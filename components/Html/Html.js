@@ -1,12 +1,7 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
-
 import React, { PropTypes } from 'react';
 import GoogleAnalytics from '../GoogleAnalytics';
 import config from '../../config';
+require('../fonts/Franklin Gothic Medium SSi.ttf')
 
 function Html({ title, description, body, debug }) {
   return (
