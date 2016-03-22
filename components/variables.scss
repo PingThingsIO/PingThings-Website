@@ -4,8 +4,12 @@
 
 $body-bg: #ffffff;
 $text-color: #363636;
-$brand-color: #21ce99;
-
+$text-on-light: #424242;
+$blue-color: #00BEAE;
+$orange-color: #dc7d2e;
+$green-color: #afcd51;
+$gray-bg-color: rgb(231, 232, 233);
+$block-bg-color: #e7e8e9;
 /*
  * Typography
  * -------------------------------------------------------------------------- */
@@ -20,3 +24,9 @@ $font-family-base: 'Franklin Gothic', 'Helvetica', sans-serif;
 $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-min: 1200px;
+
+/*
+ * SCSS Tranistion Mixin
+ * -------------------------------------------------------------------------- */
+
+

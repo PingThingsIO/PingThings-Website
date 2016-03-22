@@ -3,10 +3,211 @@ import React, { Component } from 'react';
 export default class extends Component {
 
   render() {
+
+    const stats = [];
+    for (var i = 0; i < 4; i++) {
+      stats.push(
+        <div key={i} className='stat-container pure-u-1-4'>
+          <div className='stat-numeral'>
+            <i className="fa fa-star-o"></i>
+            <h5>100</h5>
+          </div>
+          <h6>Stat Number {i + 1}</h6>
+          <hr/>
+        </div>
+      );
+    }
+
+    const publications = [];
+    for (var i = 0; i < 2; i++) {
+      const unIndexed = i + 1;
+      const path = `/images/temp-stock-2.jpg`;
+
+      publications.push(
+        <div key={i} className='pure-u-1-2'>
+          <div className='pub-container'>
+
+            <div className='img-container'>
+              <img className='pure-img' src={path} />
+            </div>
+
+            <div className='pub-text'>
+              <h3>Blog Title {unIndexed}</h3>
+              <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
+              <div className='date-container'>
+                <i className='fa fa-calendar'></i>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      );
+    }
+
+    const products = [];
+    for (var i = 0; i < 3; i++) {
+      products.push(
+        <div key={i} className='pure-u-1-3'>
+          <div className='product-container'>
+
+            <div className='img-container'>
+              <img className='pure-img' src='/images/product-image.png' />
+            </div>
+
+          </div>
+        </div>
+      );
+    }
+
     return (
-      <div>
-        <h1>Home Page</h1>
-        <p>Coming soon.</p>
+      <div id='/'>
+        <section className='section-story'>
+          <div className='center-text text-hero'>
+            <h1>Welcome to the PredictiveGrid&trade;</h1>
+            <p>Ham hock prosciutto salami venison pastrami flank. Sausage leberkäse flank t-bone meatball kielbasa, strip steak ham pork loin turkey swine cow tenderloin jowl. Venison pig kielbasa meatball, rump pork loin chicken hamburger salami bresaola sausage meatloaf ham chuck short loin.</p>
+          </div>
+        </section >
+
+        <section className='section-about pure-g'>
+          <div className='pure-u-1-2 animated fadeInLeft'>
+            <div className='left-text'>
+              <h4>About Ping Things</h4>
+              <p>Ham hock prosciutto salami venison pastrami flank. Sausage leberkäse flank t-bone meatball kielbasa, strip steak ham pork loin turkey swine cow tenderloin jowl. Venison pig kielbasa meatball, rump pork loin chicken hamburger salami bresaola sausage meatloaf ham chuck short loin.</p>
+              <button className="pure-button">LEARN MORE</button>
+            </div>
+          </div>
+          <div className='pure-u-1-2 animated fadeInRight'>
+            <div className='image-container'>
+              <img className='pure-img' src='images/temp-stock-1.jpg' />
+            </div>
+          </div>
+        </section >
+
+        <section className='section-how pure-g'>
+
+          <div className='pure-u-1-1 center-text'>
+            <h4 className='animated slideInDown'>How It Works</h4>
+            <hr className='animated slideInLeft'/>
+            <p className='animated slideInLeft'>T-bone meatball kielbasa, strip steak ham pork loin. T-bone meatball kielbasa, strip steak ham pork loin. T-bone meatball kielbasa, strip steak ham pork loin.</p>
+          </div>
+
+          <div className='blocks-container'>
+
+            <div className='block pure-u-1-3 animated rotateInDownLeft'>
+              <i className="fa fa-bar-chart"></i>
+              <h5>Some Title</h5>
+              <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
+            </div>
+
+            <div className='block pure-u-1-3 animated fadeInDown'>
+              <i className="fa fa-futbol-o"></i>
+              <h5>Some Title</h5>
+              <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
+            </div>
+
+            <div className='block pure-u-1-3 animated rotateInDownRight'>
+              <i className="fa fa-paper-plane"></i>
+              <h5>Some Title</h5>
+              <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
+            </div>
+
+            <div className='block pure-u-1-3 animated rotateInUpLeft'>
+              <i className="fa fa-terminal"></i>
+              <h5>Some Title</h5>
+              <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
+            </div>
+
+            <div className='block pure-u-1-3 animated fadeInUp'>
+              <i className="fa fa-university"></i>
+              <h5>Some Title</h5>
+              <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
+            </div>
+
+            <div className='block pure-u-1-3 animated rotateInUpRight'>
+              <i className="fa fa-tachometer"></i>
+              <h5>Some Title</h5>
+              <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
+            </div>
+
+
+          </div>
+        </section>
+
+        <section className='section-stats pure-g'>
+          <div className='stats-container animated fadeIn'>
+            {stats}
+          </div>
+        </section>
+
+        <section id='products' className='section-products pure-g'>
+
+          <div className='pure-u-1-1 center-text'>
+            <h4>Our Products</h4>
+            <hr/>
+            <p>T-bone meatball kielbasa, strip steak ham pork loin. T-bone meatball kielbasa, strip steak ham pork loin. T-bone meatball kielbasa, strip steak ham pork loin.</p>
+          </div>
+
+          <div className='products-container pure-u-1-1'>
+            {products}
+          </div>
+
+        </section>
+
+        <section className='section-cta pure-g'>
+
+          <div className='pure-u-1-1'>
+            <h2>Call To Action. You Know You Want To Find Out More</h2>
+            <button className="pure-button">Contact Us</button>
+          </div>
+
+        </section>
+
+        <section id='resources' className='section-resources pure-g'>
+
+          <div className='pure-u-1-1 center-text'>
+            <h4>Latest Publications and Resources</h4>
+            <hr/>
+            <p>T-bone meatball kielbasa, strip steak ham pork loin. T-bone meatball kielbasa, strip steak ham pork loin. T-bone meatball kielbasa, strip steak ham pork loin.</p>
+          </div>
+
+          <div className='publications-container pure-u-1-1'>
+            {publications}
+          </div>
+
+        </section>
+
+        <section id='contact' className='section-contact pure-g'>
+
+          <div className='pure-u-5-5 center-text'>
+            <h4>Get In Touch With Us</h4>
+            <hr/>
+            <p>T-bone meatball kielbasa, strip steak ham pork loin. T-bone meatball kielbasa, strip steak ham pork loin. T-bone meatball kielbasa, strip steak ham pork loin.</p>
+          </div>
+          <div className='pure-u-5-5'>
+            <form className="pure-form pure-form-stacked">
+                <fieldset>
+                    <div className="pure-g">
+                        <div className="pure-u-1 pure-u-md-1-3">
+                            <input id="first-name" placeholder="FIRST NAME" type="text"/>
+                            <input id="last-name" placeholder="LAST NAME" type="text"/>
+                        </div>
+
+                        <div className="pure-u-1 pure-u-md-1-3">
+                            <input id="email" placeholder="EMAIL" className="pure-u-23-24" type="email" required/>
+                        </div>
+
+                        <div className="pure-u-1 pure-u-md-1-3">
+                            <textarea id="comment" placeholder='MESSAGE' className="pure-input-1-2">
+                            </textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" className="pure-button pure-button-primary">Submit</button>
+                </fieldset>
+            </form>
+          </div>
+        </section>
+
       </div>
     );
   }

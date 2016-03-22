@@ -1,12 +1,16 @@
 import React, { PropTypes } from 'react';
 import './Layout.scss';
-import Navigation from '../Navigation';
+import Header from '../Header';
+import Footer from '../Footer';
 
 function Layout({ children }) {
   return (
-    <div className="Layout">
-      <Navigation />
-      {children}
+    <div>
+      <Header />
+      <div className="Layout">
+        {children}
+      </div>
+      <Footer />
     </div>
   );
 }
