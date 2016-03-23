@@ -1,5 +1,16 @@
 # PingThings Website Source Code
 
+### Getting Started
+
+Just clone the repo, install Node.js modules and run `npm start`:
+
+```
+$ npm install
+$ npm start
+```
+
+Then open [http://localhost:3000/](http://localhost:3000/) in your browser.
+
 ### Directory Layout
 ```
 .
