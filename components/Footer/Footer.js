@@ -10,6 +10,8 @@ function Footer() {
         <img src='images/PingThings_logo.png'/>
       </div>
 
+      <p>&copy; PingThings Inc. All Rights Reserved</p>
+
     </footer>
   );
 }

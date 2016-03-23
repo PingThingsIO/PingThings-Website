@@ -39,7 +39,8 @@ export default class extends Component {
               <h3>Blog Title {unIndexed}</h3>
               <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
               <div className='date-container'>
-                <i className='fa fa-calendar'></i>
+                <p><i className='fa fa-calendar'></i>March 14, 2015</p>
+
               </div>
             </div>
 

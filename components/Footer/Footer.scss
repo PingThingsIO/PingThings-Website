@@ -2,4 +2,12 @@ footer {
   width: 100%;
   height: 250px;
   background: #000;
+  .logo-container {
+    float: left;
+    margin: 140px 140px 0 140px;
+  }
+  p {
+    float: right;
+    margin: 175px 140px 0 175px;
+  }
 }
