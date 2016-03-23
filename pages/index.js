@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import Scroll from 'react-scroll';
+
+const Element = Scroll.Element;
+const NavTo  = Scroll.Link;
 
 export default class extends Component {
 
@@ -63,12 +67,17 @@ export default class extends Component {
       <div id='/'>
         <section className='section-story'>
           <div className='center-text text-hero'>
-            <h1>Welcome to the PredictiveGrid&trade;</h1>
-            <p>Ham hock prosciutto salami venison pastrami flank. Sausage leberkäse flank t-bone meatball kielbasa, strip steak ham pork loin turkey swine cow tenderloin jowl. Venison pig kielbasa meatball, rump pork loin chicken hamburger salami bresaola sausage meatloaf ham chuck short loin.</p>
+            <h1 className='animated fadeIn'>Welcome to the PredictiveGrid&trade;</h1>
+            <p className='animated fadeIn'>Ham hock prosciutto salami venison pastrami flank. Sausage leberkäse flank t-bone meatball kielbasa, strip steak ham pork loin turkey swine cow tenderloin jowl. Venison pig kielbasa meatball, rump pork loin chicken hamburger salami bresaola sausage meatloaf ham chuck short loin.</p>
+            <NavTo activeClass="active" to="about" spy={true} smooth={true} duration={750}>
+              <div className='down-scroll animated bounceIn'>
+                <i className="fa fa-angle-down"></i>
+              </div>
+            </NavTo>
           </div>
         </section >
 
-        <section className='section-about pure-g'>
+        <Element name='about' className='section-about pure-g _section'>
           <div className='pure-u-1-2 animated fadeInLeft'>
             <div className='left-text'>
               <h4>About Ping Things</h4>
@@ -81,7 +90,7 @@ export default class extends Component {
               <img className='pure-img' src='images/temp-stock-1.jpg' />
             </div>
           </div>
-        </section >
+        </Element>
 
         <section className='section-how pure-g'>
 
@@ -139,7 +148,7 @@ export default class extends Component {
           </div>
         </section>
 
-        <section id='products' className='section-products pure-g'>
+        <Element name="products" id='products' className='section-products _section pure-g'>
 
           <div className='pure-u-1-1 center-text'>
             <h4>Our Products</h4>
@@ -151,7 +160,7 @@ export default class extends Component {
             {products}
           </div>
 
-        </section>
+        </Element>
 
         <section className='section-cta pure-g'>
 
@@ -162,7 +171,7 @@ export default class extends Component {
 
         </section>
 
-        <section id='resources' className='section-resources pure-g'>
+        <Element name="resources" className='section-resources _section pure-g'>
 
           <div className='pure-u-1-1 center-text'>
             <h4>Latest Publications and Resources</h4>
@@ -174,9 +183,9 @@ export default class extends Component {
             {publications}
           </div>
 
-        </section>
+        </Element>
 
-        <section id='contact' className='section-contact pure-g'>
+        <Element name='contact' className='section-contact _section pure-g'>
 
           <div className='pure-u-5-5 center-text'>
             <h4>Get In Touch With Us</h4>
@@ -206,7 +215,7 @@ export default class extends Component {
                 </fieldset>
             </form>
           </div>
-        </section>
+        </Element>
 
       </div>
     );

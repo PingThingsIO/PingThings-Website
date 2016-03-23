@@ -13,9 +13,19 @@ $block-bg-color: #e7e8e9;
 /*
  * Typography
  * -------------------------------------------------------------------------- */
-@include font-face(Franklin Gothic, './fonts/Franklin Gothic Medium SSi.ttf');
+@font-face {
+    font-family: 'franklin_gothic_fsbook';
+    src: url('/fonts/franklingothic-book-webfont.eot');
+    src: url('/fonts/franklingothic-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/franklingothic-book-webfont.woff2') format('woff2'),
+         url('/fonts/franklingothic-book-webfont.woff') format('woff'),
+         url('/fonts/franklingothic-book-webfont.ttf') format('truetype'),
+         url('/fonts/franklingothic-book-webfont.svg#franklin_gothic_fsbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-$font-family-base: 'Franklin Gothic', 'Helvetica', sans-serif;
+$font-family-base: 'franklin_gothic_fsbook', 'Helvetica', sans-serif;
 
 /*
  * Media queries breakpoints
@@ -28,5 +38,4 @@ $screen-lg-min: 1200px;
 /*
  * SCSS Tranistion Mixin
  * -------------------------------------------------------------------------- */
-
 

@@ -1,34 +1,46 @@
 import React from 'react';
 import './Header.scss';
 import Link from '../Link';
+import Scroll from 'react-scroll';
 
-function Navigation() {
-  return (
-    <header>
+const scroll  = Scroll.animateScroll;
+const NavTo   = Scroll.Link;
 
-      <div className='logo-container'>
-        <img src='images/PingThings_logo.png'/>
-      </div>
+var Header = React.createClass({
 
-      <ul className="Navigation" role="menu">
-        <li className="Navigation-item">
-          <a className="Navigation-link" href="/">Story</a>
-        </li>
-        <li className="Navigation-item">
-          <a className="Navigation-link" href="/#products">Products</a>
-        </li>
-        <li className="Navigation-item">
-          <a className="Navigation-link" href="/#resources">Resources</a>
-        </li>
-        <li className="Navigation-item">
-          <a className="Navigation-link" href="/blog" onClick={Link.handleClick}>Blog</a>
-        </li>
-        <li className="Navigation-item">
-          <a className="Navigation-link" href="/#contact">Contact</a>
-        </li>
-      </ul>
-    </header>
-  );
-}
+  scrollToTop () {
+    scroll.scrollToTop();
+  },
 
-export default Navigation;
+  render () {
+    return (
+      <header>
+
+        <div className='logo-container animated fadeInLeft'>
+          <img src='images/PingThings_logo.png'/>
+        </div>
+
+        <ul className="Navigation" role="menu">
+          <li className="Navigation-item animated fadeInRight">
+            <a className="Navigation-link" onClick={this.scrollToTop}>Story</a>
+          </li>
+          <li className="Navigation-item animated fadeInRight">
+            <NavTo activeClass="active" className="Navigation-link" to="products" spy={true} smooth={true} duration={750} >Products</NavTo>
+          </li>
+          <li className="Navigation-item animated fadeInRight">
+            <NavTo activeClass="active" className="Navigation-link" to="resources" spy={true} smooth={true} duration={750} >Resources</NavTo>
+          </li>
+          <li className="Navigation-item animated fadeInRight">
+            <a className="Navigation-link" href="/blog" onClick={Link.handleClick}>Blog</a>
+          </li>
+          <li className="Navigation-item animated fadeInRight">
+            <NavTo activeClass="active" className="Navigation-link" to="contact" spy={true} smooth={true} duration={750} >Contact</NavTo>
+          </li>
+        </ul>
+      </header>
+    );
+  }
+
+})
+
+export default Header;
