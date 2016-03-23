@@ -11,7 +11,7 @@ export default class extends Component {
     const stats = [];
     for (var i = 0; i < 4; i++) {
       stats.push(
-        <div key={i} className='stat-container pure-u-1-4'>
+        <div key={i} className='stat-container pure-u-lg-1-4 pure-u-1-2'>
           <div className='stat-numeral'>
             <i className="fa fa-star-o"></i>
             <h5>100</h5>
@@ -28,7 +28,7 @@ export default class extends Component {
       const path = `/images/temp-stock-2.jpg`;
 
       publications.push(
-        <div key={i} className='pure-u-1-2'>
+        <div key={i} className='pure-u-lg-1-2 pure-u-1'>
           <div className='pub-container'>
 
             <div className='img-container'>
@@ -52,7 +52,7 @@ export default class extends Component {
     const products = [];
     for (var i = 0; i < 3; i++) {
       products.push(
-        <div key={i} className='pure-u-1-3'>
+        <div key={i} className='pure-u-lg-1-3 pure-u-1'>
           <div className='product-container'>
 
             <div className='img-container'>
@@ -70,23 +70,25 @@ export default class extends Component {
           <div className='center-text text-hero'>
             <h1 className='animated fadeIn'>Welcome to the PredictiveGrid&trade;</h1>
             <p className='animated fadeIn'>Ham hock prosciutto salami venison pastrami flank. Sausage leberkäse flank t-bone meatball kielbasa, strip steak ham pork loin turkey swine cow tenderloin jowl. Venison pig kielbasa meatball, rump pork loin chicken hamburger salami bresaola sausage meatloaf ham chuck short loin.</p>
-            <NavTo activeClass="active" to="about" spy={true} smooth={true} duration={750}>
-              <div className='down-scroll animated bounceIn'>
-                <i className="fa fa-angle-down"></i>
-              </div>
-            </NavTo>
+            <div className='scroll-container'>
+              <NavTo activeClass="active" to="about" spy={true} smooth={true} duration={750}>
+                <div className='down-scroll animated bounceIn'>
+                  <i className="fa fa-angle-down"></i>
+                </div>
+              </NavTo>
+            </div>
           </div>
-        </section >
+        </section>
 
         <Element name='about' className='section-about pure-g _section'>
-          <div className='pure-u-1-2 animated fadeInLeft'>
+          <div className='pure-u-1-1 pure-u-lg-1-2 animated fadeInLeft'>
             <div className='left-text'>
               <h4>About Ping Things</h4>
               <p>Ham hock prosciutto salami venison pastrami flank. Sausage leberkäse flank t-bone meatball kielbasa, strip steak ham pork loin turkey swine cow tenderloin jowl. Venison pig kielbasa meatball, rump pork loin chicken hamburger salami bresaola sausage meatloaf ham chuck short loin.</p>
               <button className="pure-button">LEARN MORE</button>
             </div>
           </div>
-          <div className='pure-u-1-2 animated fadeInRight'>
+          <div className='pure-u-1-1 pure-u-lg-1-2 animated fadeInRight'>
             <div className='image-container'>
               <img className='pure-img' src='images/temp-stock-1.jpg' />
             </div>
@@ -103,37 +105,37 @@ export default class extends Component {
 
           <div className='blocks-container'>
 
-            <div className='block pure-u-1-3 animated rotateInDownLeft'>
+            <div className='block pure-u-lg-1-3 pure-u-1-2 animated rotateInDownLeft'>
               <i className="fa fa-bar-chart"></i>
               <h5>Some Title</h5>
               <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
             </div>
 
-            <div className='block pure-u-1-3 animated fadeInDown'>
+            <div className='block pure-u-lg-1-3 pure-u-1-2 animated fadeInDown'>
               <i className="fa fa-futbol-o"></i>
               <h5>Some Title</h5>
               <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
             </div>
 
-            <div className='block pure-u-1-3 animated rotateInDownRight'>
+            <div className='block pure-u-lg-1-3 pure-u-1-2 animated rotateInDownRight'>
               <i className="fa fa-paper-plane"></i>
               <h5>Some Title</h5>
               <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
             </div>
 
-            <div className='block pure-u-1-3 animated rotateInUpLeft'>
+            <div className='block pure-u-lg-1-3 pure-u-1-2 animated rotateInUpLeft'>
               <i className="fa fa-terminal"></i>
               <h5>Some Title</h5>
               <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
             </div>
 
-            <div className='block pure-u-1-3 animated fadeInUp'>
+            <div className='block pure-u-lg-1-3 pure-u-1-2 animated fadeInUp'>
               <i className="fa fa-university"></i>
               <h5>Some Title</h5>
               <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
             </div>
 
-            <div className='block pure-u-1-3 animated rotateInUpRight'>
+            <div className='block pure-u-lg-1-3 pure-u-1-2 animated rotateInUpRight'>
               <i className="fa fa-tachometer"></i>
               <h5>Some Title</h5>
               <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>

@@ -1,8 +1,6 @@
 @import '../variables.scss';
 
-
 header {
-  width: 100%;
   margin: 0 auto;
   padding: 0px 0 0 140px;
   height: 5em;
@@ -18,6 +16,7 @@ header {
   justify-content: flex-end;
   font-weight: 700;
   font-size: 18px;
+  color: $text-color;
 }
 
 .logo-container {
@@ -28,21 +27,59 @@ header {
   }
 }
 
-@media (min-width: $screen-sm-min) {
+@media (min-width: $screen-sm) {
   .Navigation {
-    width: calc($screen-sm-min - 18px);
+    width: calc($screen-sm - 18px);
   }
 }
 
-@media (min-width: $screen-md-min) {
+@media (min-width: $screen-md) {
   .Navigation {
-    width: calc($screen-md-min - 22px);
+    width: calc($screen-md - 22px);
   }
 }
 
-@media (min-width: $screen-lg-min) {
+@media (max-width: $screen-md) {
+  header {
+    padding-left: 20px;
+    width: 100%;
+  }
   .Navigation {
-    width: calc($screen-lg-min - 30px);
+    &.is-closed {
+      display: none;
+    }
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+      margin: 19px 0 19px -20px;;
+      width: 100%;
+      list-style: none;
+      justify-content: flex-end;
+      font-weight: 700;
+      background-color: $gray-bg-color;
+      font-size: 18px;
+      z-index: 1;
+      position: absolute;
+      .Navigation-item {
+        padding: 24px 24px 24px 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid $text-color;
+        border-top: 1px solid $text-color;
+        &:first-child {
+          border-top: 2px solid $text-color;
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .Navigation {
+    width: calc($screen-lg - 30px);
   }
 }
 

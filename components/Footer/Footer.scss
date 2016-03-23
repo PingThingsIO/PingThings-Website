@@ -8,6 +8,21 @@ footer {
   }
   p {
     float: right;
+    color: #fff;
     margin: 175px 140px 0 175px;
+  }
+  @media (max-width : 1024px) {
+    .logo-container {
+      float: none;
+    }
+    p {
+      margin: 10px 0 0 140px;
+      float: left;
+    }
+  }
+  @media (max-width : 768px) {
+    .logo-container, p {
+      margin-left: 10px;
+    }
   }
 }
