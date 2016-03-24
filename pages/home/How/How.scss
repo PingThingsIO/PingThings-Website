@@ -1,0 +1,61 @@
+@import '../../../components/variables.scss';
+@import '../../../components/base.scss';
+
+
+.section-how {
+  padding: 0 0 70px;
+  .center-text {
+    text-align: center;
+
+  }
+  .blocks-container {
+    color: #6b6e6d;
+    margin: 0 20%;
+    .block {
+      padding: 30px 25px;
+      text-align: center;
+      background-color: $block-bg-color;
+      h5 {
+        color: #3bc2b7;
+        text-transform: uppercase;
+        font-size: 16px;
+      }
+      i {
+        font-size: 60px;
+        margin-bottom: 17px;
+      }
+      &:nth-child(1), &:nth-child(3) {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: 1px solid #b7b7bc;
+      }
+      &:nth-child(2) {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border-top: 1px solid #b7b7bc;
+        border-bottom: 1px solid #b7b7bc;
+      }
+      &:nth-child(4), &:nth-child(6) {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: 1px solid #b7b7bc;
+      }
+      &:nth-child(5) {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border-top: 1px solid #b7b7bc;
+        border-bottom: 1px solid #b7b7bc;
+      }
+
+    }
+  }
+  @media (max-width: $pure-lg) {
+    .blocks-container {
+      margin: 0 5%;
+    }
+  }
+}

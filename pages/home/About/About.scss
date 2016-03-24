@@ -1,0 +1,38 @@
+@import '../../../components/variables.scss';
+@import '../../../components/base.scss';
+
+.section-about {
+  .left-text {
+    margin: 135px;
+    margin-bottom: 0px;
+    p {
+      padding-left: 40px;
+    }
+   button {
+      background: $green-color;
+      color: #ffffff;
+      padding: 1em 2em;
+      margin-top: 22px;
+      &:hover {
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+        background: $orange-color;
+        color: #363636;
+      }
+    }
+  }
+
+  .image-container {
+    margin: 20% 19% 0 100px;
+  }
+  @media (max-width: $pure-lg) {
+    .left-text {
+      margin: 50px;
+    }
+    .image-container {
+      margin: 50px;
+    }
+  }
+}

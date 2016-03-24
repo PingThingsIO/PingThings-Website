@@ -1,0 +1,14 @@
+@import '../../../components/variables.scss';
+@import '../../../components/base.scss';
+
+.section-products {
+  img {
+    margin: 0 auto;
+  }
+  @media (max-width: $pure-lg) {
+    img {
+      margin: 10px auto;
+      width: 80%;
+    }
+  }
+}
