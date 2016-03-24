@@ -348,29 +348,95 @@ h4 {
 }
 
 .section-contact {
+  .contact-item {
+    text-align: left;
+    margin-left: 15%;
+    i {
+      color: #10b8ab;
+      font-size: 30px;
+      display: inline-block;
+      width: 15%
+    }
+    h6 {
+      font-size: 18px;
+      font-weight: 100;
+      display: inline-block;
+      a {
+        &:link {
+          color: $text-color;
+        }
+      }
+    }
+  }
   form {
+    width: 75%;
     margin: 0 auto;
     max-width: 800px;
+    @media (max-width: $screen-md) { width: 95% }
+    .name, #email, textarea {
+      background-color: #f3f5f0;
+      color: #7d7e7c;
+      font-weight: 100;
+      -webkit-appearance: none;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      padding: 14px;
+      &::-webkit-input-placeholder {
+        color: #7d7e7c;
+        text-transform: uppercase;
+
+      }
+      &:-moz-placeholder {
+        color: #7d7e7c;
+        text-transform: uppercase;
+
+      }
+      &::-moz-placeholder {
+        color: #7d7e7c;
+        text-transform: uppercase;
+
+      }
+      &:-ms-input-placeholder {
+        color: #7d7e7c;
+        text-transform: uppercase;
+
+      }
+    }
+    textarea {
+      margin: 30px 0;
+      min-height: 175px;
+    }
+    .name {
+      text-transform: capitalize;
+      border-radius: 0;
+      display: inline-block;
+      width: 49.5%;
+      margin-bottom: 27px;
+      &:first-child {
+        margin-right: 0.5%;
+      }
+      &:last-child {
+        margin-left: 0.5%;
+      }
+    }
+    #email {
+      text-transform: lowercase;
+    }
+   button {
+      background: $green-color;
+      color: #ffffff;
+      padding: 1em 2em;
+      margin-top: 22px;
+      &:hover {
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+        background: $orange-color;
+        color: #363636;
+      }
+    }
   }
 }
-
-
-/**!
-@media (min-width: $screen-sm) {
-  .Layout {
-    width: calc($screen-sm - 18px);
-  }
-}
-
-@media (min-width: $screen-md) {
-  .Layout {
-    width: calc($screen-md - 22px);
-  }
-}
-
-@media (min-width: $screen-lg) {
-  .Layout {
-    width: calc($screen-lg - 30px);
-  }
-}
-*/
