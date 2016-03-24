@@ -17,7 +17,7 @@ export default React.createClass({
           <div className='product-container'>
 
             <div className='img-container'>
-              <img className='pure-img' src='/images/product-image.png' />
+              <img className='pure-img' src='images/product-image.png' />
             </div>
 
           </div>

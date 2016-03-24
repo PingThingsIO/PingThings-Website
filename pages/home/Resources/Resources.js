@@ -13,7 +13,7 @@ export default React.createClass({
     const publications = [];
     for (var i = 0; i < 2; i++) {
       const unIndexed = i + 1;
-      const path = `/images/temp-stock-2.jpg`;
+      const path = `images/temp-stock-2.jpg`;
 
       publications.push(
         <div key={i} className='pure-u-lg-1-2 pure-u-1'>

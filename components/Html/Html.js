@@ -15,7 +15,7 @@ function Html({ title, description, body, debug }) {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/g/pure@0.6.0,animatecss@3.5.1"/>
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css"/>
-        <script src={'/app.js?' + new Date().getTime()} />
+        <script src={'./app.js?' + new Date().getTime()} />
       </head>
       <body>
         <div id="app" dangerouslySetInnerHTML={{ __html: body }} />
