@@ -6,6 +6,7 @@ import HowSection from './home/How';
 import StatsSection from './home/Stats';
 import ProductsSection from './home/Products';
 import CtaSection from './home/Cta';
+import TeamSection from './home/Team';
 import ResourcesSection from './home/Resources';
 import ContactSection from './home/Contact';
 
@@ -29,7 +30,7 @@ export default class extends Component {
 
         <ProductsSection />
 
-        <CtaSection />
+        <TeamSection />
 
         <ResourcesSection />
 

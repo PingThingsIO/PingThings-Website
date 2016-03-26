@@ -50,7 +50,7 @@ var Header = React.createClass({
             <NavTo activeClass="active" className="Navigation-link" to="resources" spy={true} smooth={true} duration={750} onClick={this.closeMenu}>Resources</NavTo>
           </li>
           <li className="Navigation-item animated fadeInUp">
-            <a className="Navigation-link" href="/blog" onClick={Link.handleClick}>Blog</a>
+            <NavTo activeClass="active" className="Navigation-link" to="team" spy={true} smooth={true} duration={750} onClick={this.closeMenu}>Team</NavTo>
           </li>
           <li className="Navigation-item animated fadeInUp">
             <NavTo activeClass="active" className="Navigation-link" to="contact" spy={true} smooth={true} duration={750} onClick={this.closeMenu}>Contact</NavTo>

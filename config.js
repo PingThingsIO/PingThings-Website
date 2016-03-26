@@ -1,5 +1,5 @@
 export default {
-  title: 'PingThings Website',
+  title: 'PingThings | Predictive Grid',
   description: 'PingThings corporate website.',
   googleAnalyticsId: 'UA-XXXXX-X',
 };

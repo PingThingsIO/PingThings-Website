@@ -19,15 +19,15 @@ export default React.createClass({
         </div>
 
         <div className='pure-u-1-1 pure-u-lg-14-24'>
-          <form className="pure-form pure-form-stacked">
+          <form action="https://formspree.io/sean@pingthings.io" method="POST" className="pure-form pure-form-stacked">
             <fieldset>
               <div className='pure-u-1'>
-                <input id="first-name" className='name' placeholder="FIRST NAME" type="text"/>
+                <input id="first-name" name="name" className='name' placeholder="FIRST NAME" type="text"/>
                 <input id="last-name" className='name' placeholder="LAST NAME" type="text"/>
               </div>
-                <input id="email" placeholder="EMAIL" className="pure-u-1" type="email" required/>
-                <textarea id="comment" placeholder='MESSAGE' className="pure-input-1"></textarea>
-              <button type="submit" className="pure-button">Submit</button>
+                <input id="email" name="_replyto" placeholder="EMAIL" className="pure-u-1" type="email" required/>
+                <textarea id="comment" name="message" placeholder='MESSAGE' className="pure-input-1"></textarea>
+              <button type="submit" value='send' className="pure-button">Submit</button>
 
             </fieldset>
           </form>

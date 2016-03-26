@@ -32,7 +32,7 @@ const JS_LOADER = {
 const config = {
   output: {
     path: path.join(__dirname, '../build'),
-    publicPath: '/',
+    publicPath: './',
     sourcePrefix: '  ',
   },
   cache: false,
