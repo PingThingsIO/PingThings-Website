@@ -117,14 +117,54 @@
 }
 
 .section-team {
-  margin: 50px 0;
-  padding: 100px 0;
+  padding: 10px 0;
   color: #fff;
   background: url('../../static/images/teal_bg.png') no-repeat center center;
-  background-size: 100%;
+  background-size: 170%;
+  h4 {
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  @media (max-width: $pure-lg) {background-size: auto 100%;}
   text-align: center;
+  .left-1st {
+    padding-left: 10%;
+    @media (max-width: $pure-lg) {padding-left: 0;}
+  }
+  .right-1st {
+    padding-right: 10%;
+    @media (max-width: $pure-lg) {padding-right: 0;}
+  }
+  .left-2nd {
+    padding-left: 21%;
+    @media (max-width: $pure-lg) {padding-left: 0;}
+  }
+  .right-2nd {
+    padding-right: 21%;
+    @media (max-width: $pure-lg) {padding-right: 0;}
+  }
   img {
-    width: 31%;
+    width: 150px;
+  }
+  .row-1 {
+    margin-bottom: 40px;
+  }
+  h5 {
+    margin: 10px 0;
+    font-size: 27px;
+  }
+  h6 {
+    margin: 10px 0;
+    font-size: 15px;
+  }
+  i {
+    padding: 0 9px;
+    color: #fff;
+    font-size: 20px;
+    &:link {
+      color: #fff;
+    }
   }
   @media (max-width: $pure-lg) {background-size: auto 100%;}
 }
