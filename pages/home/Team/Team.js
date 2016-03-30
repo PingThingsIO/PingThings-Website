@@ -53,7 +53,18 @@ export default React.createClass({
           </div>
         </div>
 
-        <div className='pure-u-1-1 pure-u-lg-1-2 left-2nd'>
+        <div className='pure-u-1-1 pure-u-lg-1-3 row-1 left-1st'>
+          <div className='team-img-container'>
+            <img src='images/mohseni.jpg'/>
+          </div>
+          <h5>Mehrdod Mohseni</h5>
+          <h6>Chief Commercial Officer</h6>
+          <div className='contact-link'>
+            <a target="_blank" href='https://www.linkedin.com/in/mehrdod-mohseni-82463a'><i className="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div className='pure-u-1-1 pure-u-lg-1-3 row-1'>
           <div className='team-img-container'>
             <img src='images/ramsay.jpg'/>
           </div>
@@ -64,7 +75,7 @@ export default React.createClass({
           </div>
         </div>
 
-        <div className='pure-u-1-1 pure-u-lg-1-2 right-2nd'>
+        <div className='pure-u-1-1 pure-u-lg-1-3 row-1 right-1st'>
           <div className='team-img-container'>
             <img src='images/heyeck.jpg'/>
           </div>
