@@ -1,5 +1,4 @@
 import React from 'react';
-import './Story.scss';
 import Scroll from 'react-scroll';
 
 const Element = Scroll.Element;
@@ -14,7 +13,7 @@ export default React.createClass({
       <Element name='top' className='_section section-story'>
         <div className='center-text text-hero'>
           <h1 className='animated fadeIn'>Welcome to the PredictiveGrid&trade;</h1>
-          <p className='animated fadeIn'>Ham hock prosciutto salami venison pastrami flank. Sausage leberkäse flank t-bone meatball kielbasa, strip steak ham pork loin turkey swine cow tenderloin jowl. Venison pig kielbasa meatball, rump pork loin chicken hamburger salami bresaola sausage meatloaf ham chuck short loin.</p>
+          <p className='animated fadeIn'>The grid is in a state of turmoil with the advent of distributed generation, concerns about cybersecurity and the threat of another natural disaster. Wide area situational awareness demands that you know about something before it’s about to happen. Welcome to the PredictiveGrid™. PingThings brings best practices regarding big data with our in-depth understanding of real time sensor data, machine learning techniques and deploying scalable enterprise class systems.</p>
           <div className='scroll-container'>
             <NavTo activeClass="active" to="about" spy={true} smooth={true} duration={750}>
               <div className='down-scroll animated bounceIn'>

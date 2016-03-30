@@ -1,5 +1,4 @@
 import React from 'react';
-import './Contact.scss';
 import Scroll from 'react-scroll';
 
 const Element = Scroll.Element;
@@ -15,7 +14,6 @@ export default React.createClass({
         <div className='pure-u-1 center-text'>
           <h4>Get In Touch With Us</h4>
           <hr/>
-          <p>T-bone meatball kielbasa, strip steak ham pork loin. T-bone meatball kielbasa, strip steak ham pork loin. T-bone meatball kielbasa, strip steak ham pork loin.</p>
         </div>
 
         <div className='pure-u-1-1 pure-u-lg-14-24'>

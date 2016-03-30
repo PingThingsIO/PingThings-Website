@@ -1,5 +1,4 @@
 import React from 'react';
-import './Resources.scss';
 import Scroll from 'react-scroll';
 
 const Element = Scroll.Element;
@@ -9,30 +8,46 @@ export default React.createClass({
   displayName: 'Home-Resources',
 
   render() {
-{}
+    const pubDate = [
+      {
+        title: 'Data and Electric Power',
+        subTitle: 'From Deterministic Machines to Probablistic Systems in Traditional Engineering',
+        date: 'February 2016',
+        url: 'https://www.whitehouse.gov/sites/default/files/microsites/ostp/final_nationalspaceweatheractionplan_20151028.pdf'
+      },{
+        title: 'National Space Weather Action Plan',
+        subTitle: ' Federal implementation approach for the National Space Weather Strategy',
+        date: 'October 2015',
+        url: 'http://www.oreilly.com/data/free/data-and-electric-power.csp'
+      }
+    ];
+
     const publications = [];
-    for (var i = 0; i < 2; i++) {
+    for (var i = 0; i < pubDate.length; i++) {
       const unIndexed = i + 1;
-      const path = `./images/temp-stock-2.jpg`;
+      let data = pubDate[i]
+      const path = `./images/publication` + unIndexed + `.png`;
 
       publications.push(
         <div key={i} className='pure-u-lg-1-2 pure-u-1'>
-          <div className='pub-container'>
+          <a href={data.url} target="_blank">
+            <div className='pub-container'>
 
-            <div className='img-container'>
-              <img className='pure-img' src={path} />
-            </div>
-
-            <div className='pub-text'>
-              <h3>Blog Title {unIndexed}</h3>
-              <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
-              <div className='date-container'>
-                <p><i className='fa fa-calendar'></i>March 14, 2015</p>
-
+              <div className='img-container'>
+                <img className='pure-img' src={path} />
               </div>
-            </div>
 
-          </div>
+              <div className='pub-text'>
+                <h3>{data.title}</h3>
+                <p>{data.subTitle}</p>
+                <div className='date-container'>
+                  <p><i className='fa fa-calendar'></i>{data.date}</p>
+                </div>
+                <i className="fa fa-arrow-right animated fadeInLeft"></i>
+              </div>
+
+            </div>
+          </a>
         </div>
       );
     }
@@ -43,7 +58,7 @@ export default React.createClass({
         <div className='pure-u-1-1 center-text'>
           <h4>Latest Publications and Resources</h4>
           <hr/>
-          <p>T-bone meatball kielbasa, strip steak ham pork loin. T-bone meatball kielbasa, strip steak ham pork loin. T-bone meatball kielbasa, strip steak ham pork loin.</p>
+          <p>See the documents below for a sampling of some of our latest research and work. More documents will be added soon.</p>
         </div>
 
         <div className='publications-container pure-u-1-1'>

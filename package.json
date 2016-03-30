@@ -24,6 +24,7 @@
     "mocha": "^2.3.3",
     "ncp": "^2.0.0",
     "node-libs-browser": "^0.5.3",
+    "node-sass": "~3.4.2",
     "postcss": "^5.0.10",
     "postcss-import": "^7.1.0",
     "postcss-loader": "^0.7.0",
@@ -31,26 +32,26 @@
     "raw-loader": "^0.5.1",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
+    "react-scroll": "~1.0.4",
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.1",
     "redbox-react": "^1.1.1",
+    "s3-upload": "^0.1.0",
+    "sass-loader": "~3.2.0",
     "style-loader": "^0.13.0",
     "through2": "^2.0.0",
     "url-loader": "^0.5.6",
     "webpack": "^1.12.2",
     "webpack-dev-middleware": "^1.2.0",
-    "webpack-hot-middleware": "^2.4.1",
-    "node-sass": "~3.4.2",
-    "sass-loader": "~3.2.0",
-    "react-scroll": "~1.0.4"
+    "webpack-hot-middleware": "^2.4.1"
   },
   "scripts": {
     "lint": "eslint src tools test",
     "test": "npm run lint && mocha --compilers js:babel/register",
     "clean": "babel-node --eval \"require('./tools/clean')().catch(err => console.log(err.stack))\"",
+    "deploy": "babel-node --eval \"require('./tools/deploy')().catch(err => console.log(err.stack))\"",
     "build": "babel-node --eval \"require('./tools/build')().catch(err => console.log(err.stack))\"",
-    "start": "babel-node --eval \"require('./tools/start')().catch(err => console.log(err.stack))\"",
-    "deploy": "babel-node --eval \"require('./tools/deploy')().catch(err => console.log(err.stack))\""
+    "start": "babel-node --eval \"require('./tools/start')().catch(err => console.log(err.stack))\""
   },
   "dependencies": {
     "compass-mixins": "~0.12.7"

@@ -1,5 +1,4 @@
 import React from 'react';
-import './Products.scss';
 import Scroll from 'react-scroll';
 
 const Element = Scroll.Element;

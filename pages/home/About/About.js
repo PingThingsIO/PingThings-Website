@@ -1,5 +1,4 @@
 import React from 'react';
-import './About.scss';
 import Scroll from 'react-scroll';
 
 const Element = Scroll.Element;
@@ -11,16 +10,15 @@ export default React.createClass({
   render() {
     return (
       <Element name='about' className='section-about pure-g _section'>
-        <div className='pure-u-1-1 pure-u-lg-1-2 animated fadeInLeft'>
+        <div className='pure-u-1-1 animated fadeInLeft'>
           <div className='left-text'>
-            <h4>About Ping Things</h4>
-            <p>Ham hock prosciutto salami venison pastrami flank. Sausage leberkäse flank t-bone meatball kielbasa, strip steak ham pork loin turkey swine cow tenderloin jowl. Venison pig kielbasa meatball, rump pork loin chicken hamburger salami bresaola sausage meatloaf ham chuck short loin.</p>
-            <button className="pure-button">LEARN MORE</button>
-          </div>
-        </div>
-        <div className='pure-u-1-1 pure-u-lg-1-2 animated fadeInRight'>
-          <div className='image-container'>
-            <img className='pure-img' src='images/temp-stock-1.jpg' />
+            <h4>About PingThings</h4>
+            <p><span className='blue-text'>PingThings</span> Inc., is a venture-backed software company that brings best-of-breed big-data software and data science techniques to the utility industry. We offer streaming analytics solutions for anomaly detection and event recognition on the power grid.</p>
+            <p><span className='blue-text'>PingThings</span> is the only company to ever receive seed funding from GE and was recognized as a top 20 early stage startup at the Siemens New Venture Forum in 2014. PingThings is engaged in several proof of concepts with multiple utilities and reliability coordinators on both coasts of the United States of America. The data sharing agreements currently in place offer us access to data covering over one third of the North American continent. We are a very small team of seven professionals passionate about bringing to market new tools for stability and reliability.</p>
+            <p><span className='blue-text'>PingThings</span>’ PredictiveGrid™ solution is a model-free, event-driven sensor platform focused on empirical data versus traditional system models and simulations. Our loosely coupled platform enables flexibility and plug and play integration with control room systems. A comprehensive suite of data modeling technologies, including clustering and classification techniques, is applied to real-time, high-fidelity data streaming from multiple sources internal and external to the utilities. Our analytics platform enables operators to better manage, maintain and protect assets with alerts to specific events occurring now and the probability that a future event will occur, such as asset failure. PredictiveGrid™ will enable control room operators to proactively manage imminent events and potentially avoid unplanned outages and unfavorable disruptions.</p>
+            <NavTo activeClass="active" to="contact" spy={true} smooth={true} duration={750}>
+              <button className="pure-button">LEARN MORE</button>
+            </NavTo>
           </div>
         </div>
       </Element>

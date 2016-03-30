@@ -1,5 +1,4 @@
 import React from 'react';
-import './How.scss';
 import Scroll from 'react-scroll';
 
 const Element = Scroll.Element;
@@ -9,6 +8,7 @@ export default React.createClass({
   displayName: 'Home-How',
 
   render() {
+
     return (
       <Element name='how' className='section-how _section pure-g'>
         <div className='pure-u-1-1 center-text'>
@@ -19,40 +19,22 @@ export default React.createClass({
 
         <div className='blocks-container'>
 
-          <div className='block pure-u-lg-1-3 pure-u-1-2 animated rotateInDownLeft'>
+          <div className='block pure-u-lg-1-3 pure-u-1-1 animated rotateInDownLeft'>
             <i className="fa fa-bar-chart"></i>
-            <h5>Some Title</h5>
-            <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
+            <h5>Scalable</h5>
+            <p>We can scale from just a few servers to thousands depending on your needs and requirements.</p>
           </div>
 
-          <div className='block pure-u-lg-1-3 pure-u-1-2 animated fadeInDown'>
-            <i className="fa fa-futbol-o"></i>
-            <h5>Some Title</h5>
-            <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
+          <div className='block pure-u-lg-1-3 pure-u-1-1 animated fadeInDown middle'>
+            <i className="fa fa-link"></i>
+            <h5>Loosley Coupled</h5>
+            <p>We&#39;ve made our software to expect change. Supporting a large array of technologies that can plug in to replace something you&#39;re not familiar with or support.</p>
           </div>
 
-          <div className='block pure-u-lg-1-3 pure-u-1-2 animated rotateInDownRight'>
-            <i className="fa fa-paper-plane"></i>
-            <h5>Some Title</h5>
-            <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
-          </div>
-
-          <div className='block pure-u-lg-1-3 pure-u-1-2 animated rotateInUpLeft'>
-            <i className="fa fa-terminal"></i>
-            <h5>Some Title</h5>
-            <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
-          </div>
-
-          <div className='block pure-u-lg-1-3 pure-u-1-2 animated fadeInUp'>
-            <i className="fa fa-university"></i>
-            <h5>Some Title</h5>
-            <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
-          </div>
-
-          <div className='block pure-u-lg-1-3 pure-u-1-2 animated rotateInUpRight'>
-            <i className="fa fa-tachometer"></i>
-            <h5>Some Title</h5>
-            <p>T-bone meatball kielbasa, strip steak ham pork loin.</p>
+          <div className='block pure-u-lg-1-3 pure-u-1-1 animated rotateInDownRight'>
+            <i className="fa fa-rocket"></i>
+            <h5>Powerful</h5>
+            <p>We optimize to perform. Regardless of the size or speed of your data streams, we can handle it.</p>
           </div>
 
         </div>
