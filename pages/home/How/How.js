@@ -12,9 +12,8 @@ export default React.createClass({
     return (
       <Element name='how' className='section-how _section pure-g'>
         <div className='pure-u-1-1 center-text'>
-          <h4 className='animated slideInDown'>How It Works</h4>
+          <h4 className='animated slideInDown'>Solution Characteristics</h4>
           <hr className='animated slideInLeft'/>
-          <p className='animated slideInLeft'>T-bone meatball kielbasa, strip steak ham pork loin. T-bone meatball kielbasa, strip steak ham pork loin. T-bone meatball kielbasa, strip steak ham pork loin.</p>
         </div>
 
         <div className='blocks-container'>

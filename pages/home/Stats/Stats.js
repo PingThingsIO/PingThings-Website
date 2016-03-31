@@ -10,14 +10,33 @@ export default React.createClass({
   render() {
 
     const stats = [];
-    for (var i = 0; i < 4; i++) {
+    const datum = [{
+      number: '6',
+      klass: 'fa fa-search',
+      title: 'Utility Company Proof of Concepts'
+    },{
+      number: '4',
+      klass: 'fa fa-cogs',
+      title: 'Viability Projects'
+    },{
+      number: '30%',
+      klass: 'fa fa-database',
+      title: 'of North American Sensor Data'
+    },{
+      number: '1',
+      klass: 'fa fa-file-text-o',
+      title: 'Provisional Patent'
+    }]
+
+    for (var i = 0; i < datum.length; i++) {
+      let data = datum[i];
       stats.push(
         <div key={i} className='stat-container pure-u-lg-1-4 pure-u-1-2'>
           <div className='stat-numeral'>
-            <i className="fa fa-star-o"></i>
-            <h5>100</h5>
+            <i className={data.klass}></i>
+            <h5>{data.number}</h5>
           </div>
-          <h6>Stat Number {i + 1}</h6>
+          <h6>{data.title}</h6>
           <hr/>
         </div>
       );

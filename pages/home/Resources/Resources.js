@@ -13,12 +13,12 @@ export default React.createClass({
         title: 'Data and Electric Power',
         subTitle: 'From Deterministic Machines to Probablistic Systems in Traditional Engineering',
         date: 'February 2016',
-        url: 'https://www.whitehouse.gov/sites/default/files/microsites/ostp/final_nationalspaceweatheractionplan_20151028.pdf'
+        url: 'http://www.oreilly.com/data/free/data-and-electric-power.csp'
       },{
         title: 'National Space Weather Action Plan',
         subTitle: ' Federal implementation approach for the National Space Weather Strategy',
         date: 'October 2015',
-        url: 'http://www.oreilly.com/data/free/data-and-electric-power.csp'
+        url: 'https://www.whitehouse.gov/sites/default/files/microsites/ostp/final_nationalspaceweatheractionplan_20151028.pdf'
       }
     ];
 

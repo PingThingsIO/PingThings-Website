@@ -42,7 +42,7 @@ export default React.createClass({
 
         <div className='pure-u-1-1 pure-u-lg-1-3 row-1 right-1st'>
           <div className='team-img-container'>
-            <img src='images/murphy.jpeg'/>
+            <img src='images/murphy.jpg'/>
           </div>
           <h5>Sean Patrick Murphy</h5>
           <h6>Chief Data Scientist</h6>
