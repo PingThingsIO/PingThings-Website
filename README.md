@@ -13,7 +13,6 @@ Then open [http://localhost:3000/](http://localhost:3000/) in your browser.
 
 ### Directory Layout
 ```
-.
 ├── /build/                     # The folder for compiled output
 ├── /node_modules/              # 3rd-party libraries and utilities
 ├── /components/                # React components
@@ -29,7 +28,22 @@ Then open [http://localhost:3000/](http://localhost:3000/) in your browser.
 └── README.md                   # Project overview
 ```
 
-### How to Test
+### Deploy
+
+This is a static site, hosted on an AWS S3 bucket. Form management is handled by Formspree.
+
+There is a webpack/gulp deploy script in `/tools/deploy`. To deploy, you must add the file `credentials.js` to the root of the directory.
+
+There is a `sample-credentials.js` file to format file pattern from. Please request keys from [Sean](mailto:sean@pingthings.io) or [Jerry](mailto:jerry@pingthings.io).
+
+To deploy app to s3:
+
+```
+$ npm run deploy
+```
+
+
+### Testing
 
 The unit tests are powered by [chai](http://chaijs.com/) and [mocha](http://mochajs.org/).
 
