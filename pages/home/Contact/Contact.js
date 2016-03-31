@@ -17,7 +17,7 @@ export default React.createClass({
         </div>
 
         <div className='pure-u-1-1 pure-u-lg-14-24'>
-          <form action="https://formspree.io/sean@pingthings.io" method="POST" className="pure-form pure-form-stacked">
+          <form action="https://formspree.io/murphsp1@gmail.com" method="POST" className="pure-form pure-form-stacked">
             <fieldset>
               <div className='pure-u-1'>
                 <input id="first-name" name="name" className='name' placeholder="FIRST NAME" type="text"/>
