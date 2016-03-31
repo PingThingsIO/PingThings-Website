@@ -98,8 +98,10 @@
       }
       h5 {
         display: inline-block;
-        font-size: 22px;
+        font-size: 36px;
         font-weight: 100;
+        padding: 10px;
+        margin: 15px 0px;
       }
       h6 {
         font-size: 23px;
@@ -277,7 +279,7 @@
       text-align: center;
       background-color: $block-bg-color;
       p {
-        height: 160px;
+        height: 180px;
       }
       h5 {
         color: #3bc2b7;

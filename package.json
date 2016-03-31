@@ -17,6 +17,9 @@
     "file-loader": "^0.8.4",
     "git-repository": "^0.1.1",
     "glob": "^5.0.15",
+    "gulp-run": "^1.6.12",
+    "gulp-s3-upload": "^1.5.2",
+    "gulp-shell": "^0.5.2",
     "history": "^1.12.6",
     "hygienist-middleware": "^0.1.0",
     "lodash.merge": "^3.3.2",
@@ -42,6 +45,7 @@
     "through2": "^2.0.0",
     "url-loader": "^0.5.6",
     "webpack": "^1.12.2",
+    "webpack-deploy": "github:productboard/webpack-deploy",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.4.1"
   },
@@ -54,6 +58,7 @@
     "start": "babel-node --eval \"require('./tools/start')().catch(err => console.log(err.stack))\""
   },
   "dependencies": {
-    "compass-mixins": "~0.12.7"
+    "compass-mixins": "~0.12.7",
+    "gulp-s3-upload": "^1.5.2"
   }
 }
