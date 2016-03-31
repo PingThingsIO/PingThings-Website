@@ -36,3 +36,7 @@ node_modules
 
 # Credentials/Keys Modules
 credentials.js
+
+#Joshs backup deploy script
+static/aws-credentials.json
+static/aws-upload.conf.js

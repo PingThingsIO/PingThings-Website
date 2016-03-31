@@ -32,7 +32,7 @@ Then open [http://localhost:3000/](http://localhost:3000/) in your browser.
 
 This is a static site, hosted on an AWS S3 bucket. Form management is handled by Formspree.
 
-There is a webpack/gulp deploy script in `/tools/deploy`. To deploy, you must add the file `credentials.js` to the root of the directory.
+There is a webpack/gulp deploy script in `/tools/deploy`. To deploy, you must add the file `credentials.js` to the root of the project directory.
 
 There is a `sample-credentials.js` file to format file pattern from. Please request keys from [Sean](mailto:sean@pingthings.io) or [Jerry](mailto:jerry@pingthings.io).
 
