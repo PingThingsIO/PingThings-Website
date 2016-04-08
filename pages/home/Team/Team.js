@@ -13,6 +13,7 @@ export default React.createClass({
       <Element name='team' className='_section section-team'>
         <div className='pure-u-1'>
           <h4>Our Team</h4>
+          <hr/>
         </div>
 
         <div className='pure-u-1-1 pure-u-lg-1-3 row-1 left-1st'>
