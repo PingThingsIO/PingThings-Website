@@ -16,6 +16,14 @@
   color: #fff;
   .text-hero {
     padding: 10% 20% 0;
+    .trademark {
+      font-size: 12px;
+      vertical-align: top;
+    }
+    p {
+      font-family: 'franklin_gothic_webfont';
+      font-size: 20px;
+    }
   }
   @media (max-width: $screen-lg) {
   .scroll-container { padding: 2% 0 10%; }
@@ -52,13 +60,15 @@
   h1 {
     text-transform: uppercase;
     font-size: 35px;
+    font-weight: 100;
+    letter-spacing: 2px;
     color: $orange-color;
   }
   .scroll-container {
     padding: 8% 0 20%;
     .down-scroll {
       color: $green-color;
-      font-size: 45px;
+      font-size: 39px;
       border: 3px solid $green-color;
       border-radius: 100px;
       width: 50px;
@@ -84,6 +94,7 @@
   text-align: center;
   background: url('../../static/images/orange_bg.png') no-repeat center center;
   background-size: 100%;
+  margin-bottom: 30px;
   @media (max-width: $pure-lg) {background-size: auto 100%;}
   color: #fff;
   .stats-container {
@@ -103,13 +114,16 @@
         font-weight: 100;
         padding: 10px;
         margin: 15px 0px;
+        font-family: 'franklin_gothic_fsbook';
       }
       h6 {
-        font-size: 23px;
+        font-size: 19px;
         text-transform: uppercase;
         font-weight: 100;
         height: 80px;
         margin: 0;
+        font-family: 'franklin_gothic_fsbook';
+        letter-spacing: 3px;
       }
       hr {
         width: 51px;
@@ -123,9 +137,14 @@
 .section-team {
   padding: 10px 0;
   background-size: 170%;
+  .team-header {
+    margin-bottom: 50px;
+  }
   h4 {
     padding: 10px;
     font-size: 20px;
+    margin-top: 0;
+    padding-top: 0;
     text-transform: uppercase;
   }
   .team-img-container {
@@ -182,19 +201,23 @@
 }
 
 .section-resources {
+  h4 {
+    margin-top: 0;
+    padding-top: 0;
+  }
   .publications-container {
     a {
       &:link {
         text-decoration: none;
       }
-      .fa-arrow-right {
+      .more {
         position: absolute;
-        font-size: 20px;
-        margin-left: 187px;
-        display: none;
+        font-size: 17px;
+        margin-left: 200px;
+        margin-top: 2%;
       }
       &:hover {
-        .fa-arrow-right {
+        .more {
           display: block;
         }
       }
@@ -203,7 +226,10 @@
   .pub-container {
     width: 500px;
     display: inline-flex;
-    margin-left: calc(50% - 250px)
+    margin-left: calc(50% - 250px);
+    .more {
+      color: #10b8ab;
+    }
   }
   .pub-text:nth-child(2) h3 {
     padding-bottom: 0px;
@@ -229,6 +255,7 @@
     }
   }
   .pub-text {
+    font-family: 'franklin_gothic_fsbook';
     color: #fff;
     height: 325px;
     background: #2f6f84;
@@ -241,7 +268,7 @@
       padding: 35px 0 25px 20px;
     }
     p {
-      font-weight: 400;
+      font-weight: 100;
       padding: 0 10px 10px 20px;
       font-size: 16px;
     }
@@ -279,10 +306,11 @@
 
 
 .section-how {
-  padding: 0 0 70px;
+  padding: 0 0 40px;
   .center-text {
     text-align: center;
     padding: 0 20%;
+    margin-bottom: 50px;
   }
   .blocks-container {
     color: #6b6e6d;
@@ -297,7 +325,10 @@
       h5 {
         color: #3bc2b7;
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-family: 'franklin_gothic_fsbook';
+        font-weight: 100;
       }
       i {
         font-size: 60px;
@@ -350,13 +381,18 @@
   background: url('../../static/images/ge-logo.png') no-repeat 38% 38%, radial-gradient(top, #10b8ab 50%, #0b847a 100%);
   text-align: center;
   h2 {
-    margin: 0 10% 80px;
-    font-weight: 100;
+    margin: 0 13% 52px;
+    font-weight: 400;
     letter-spacing: 2px;
-    font-size: 32px;
+    font-size: 27px;
+    line-height: 38px;
   }
   h3 {
     text-align: center;
+    font-size: 23px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
   button {
     background: $green-color;
@@ -374,6 +410,9 @@
 }
 
 .section-contact {
+  .center-text {
+    margin-bottom: 40px;
+  }
   .contact-item {
     text-align: left;
     margin-left: 15%;
@@ -384,7 +423,8 @@
       width: 15%
     }
     h6 {
-      font-size: 18px;
+      font-size: 16px;
+      text-transform: uppercase;
       font-weight: 100;
       display: inline-block;
       a {
@@ -453,7 +493,7 @@
    button {
       background: $green-color;
       color: #ffffff;
-      padding: 1em 2em;
+      padding: 1em 4em;
       margin-top: 22px;
       &:hover {
         -webkit-transition: all 0.25s ease-in-out;
@@ -477,15 +517,14 @@
     p {
       padding-left: 40px;
       margin-left: 40px;
+      font-size: 16px;
+      margin-right: 27%;
     }
-    .blue-text {
-      color: #3bc2b7;
-      font-size: 20px;
-    }
+    @media (max-width: $pure-lg) { p {margin-right: 0;} }
     button {
       background: $green-color;
       color: #ffffff;
-      padding: 1em 2em;
+      padding: 1em 4em;
       margin-top: 22px;
       &:hover {
         -webkit-transition: all 0.25s ease-in-out;

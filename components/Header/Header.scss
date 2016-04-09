@@ -89,6 +89,7 @@ header {
 
 .Navigation-link {
   padding: 0.5em 1em;
+  font-weight: 100;
   color: $text-color;
   text-decoration: none;
   text-transform: uppercase;
@@ -99,7 +100,6 @@ header {
   transition: all 0.25s ease-in-out;
 
   &:hover {
-    border-bottom: 2px solid $blue-color;
     color: $blue-color;
   }
 }

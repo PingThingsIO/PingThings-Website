@@ -12,7 +12,7 @@ export default React.createClass({
 
       <Element name='top' className='_section section-story'>
         <div className='center-text text-hero'>
-          <h1 className='animated fadeIn'>Welcome to the PredictiveGrid&trade;</h1>
+          <h1 className='animated fadeIn'>Welcome to the PredictiveGrid<span className='trademark'>&trade;</span></h1>
           <p className='animated fadeIn'>The grid is in a state of turmoil with the advent of distributed generation, concerns about cybersecurity and the threat of another natural disaster. Wide area situational awareness demands that you know about something before it’s about to happen. Welcome to the PredictiveGrid™. PingThings brings best practices regarding big data with our in-depth understanding of real time sensor data, machine learning techniques and deploying scalable enterprise class systems.</p>
           <div className='scroll-container'>
             <NavTo activeClass="active" to="about" spy={true} smooth={true} duration={750}>

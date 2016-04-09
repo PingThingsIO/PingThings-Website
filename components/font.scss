@@ -3,6 +3,14 @@
  * -------------------------------------------------------------------------- */
 @font-face {
     font-family: 'franklin_gothic_fsbook';
+    src: url('../../static/fonts/franklin-gothic-medium-cond.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'franklin_gothic_webfont';
     src: url('../../static/fonts/franklingothic-book-webfont.eot');
     src: url('../../static/fonts/franklingothic-book-webfont.eot?#iefix') format('embedded-opentype'),
          url('../../static/fonts/franklingothic-book-webfont.woff2') format('woff2'),

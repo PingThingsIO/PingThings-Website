@@ -5,16 +5,25 @@ html, body {
   background-color: $body-bg;
   color: $text-on-light;
   font-family: $font-family-base;
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 p {
   font-size: 18px;
   font-weight: 100;
   line-height: 25px;
+  letter-spacing: 1px;
 }
 .vertical-align {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+h4, h5 {
+  letter-spacing: 2px;
+  font-family: 'franklin_gothic_fsbook';
+  font-weight: 100;
 }
 
 .center-text {
@@ -33,7 +42,7 @@ p {
     margin: 50px;
     line-height: 28px;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 

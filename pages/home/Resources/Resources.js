@@ -43,7 +43,7 @@ export default React.createClass({
                 <div className='date-container'>
                   <p><i className='fa fa-calendar'></i>{data.date}</p>
                 </div>
-                <i className="fa fa-arrow-right animated fadeInLeft"></i>
+                <div className='more'>MORE</div>
               </div>
 
             </div>

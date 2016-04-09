@@ -11,7 +11,7 @@ export default React.createClass({
     return (
 
       <Element name='team' className='_section section-team'>
-        <div className='pure-u-1'>
+        <div className='pure-u-1 team-header'>
           <h4>Our Team</h4>
           <hr/>
         </div>
@@ -54,7 +54,7 @@ export default React.createClass({
           </div>
         </div>
 
-        <div className='pure-u-1-1 pure-u-lg-1-3 row-1 left-1st'>
+        <div className='pure-u-1-1 pure-u-lg-1-3 left-1st'>
           <div className='team-img-container'>
             <img src='images/mohseni.jpg'/>
           </div>
@@ -65,7 +65,7 @@ export default React.createClass({
           </div>
         </div>
 
-        <div className='pure-u-1-1 pure-u-lg-1-3 row-1'>
+        <div className='pure-u-1-1 pure-u-lg-1-3'>
           <div className='team-img-container'>
             <img src='images/ramsay.jpg'/>
           </div>
@@ -76,7 +76,7 @@ export default React.createClass({
           </div>
         </div>
 
-        <div className='pure-u-1-1 pure-u-lg-1-3 row-1 right-1st'>
+        <div className='pure-u-1-1 pure-u-lg-1-3 right-1st'>
           <div className='team-img-container'>
             <img src='images/heyeck.jpg'/>
           </div>
