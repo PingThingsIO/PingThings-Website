@@ -16,24 +16,12 @@ export default React.createClass({
           <hr/>
         </div>
 
-        <div className='pure-u-1-1 pure-u-lg-1-3 row-1 left-1st'>
-          <div className='team-img-container'>
-            <img src='images/sootkoos.jpg'/>
-          </div>
-          <h5>Rich Sootkoos</h5>
-          <h6>Chief Executive Officer</h6>
-          <div className='contact-link'>
-            <a target="_blank" href='http://www.linkedin.com/pub/rich-sootkoos/0/969/942'><i className="fa fa-linkedin"></i></a>
-            <a target="_blank" href='mailto:rich@pingthings.io'><i className="fa fa-envelope"></i></a>
-          </div>
-        </div>
-
-        <div className='pure-u-1-1 pure-u-lg-1-3 row-1'>
+        <div className='pure-u-1-1 pure-u-lg-1-4 team-container'>
           <div className='team-img-container'>
             <img src='images/schuman.jpg'/>
           </div>
           <h5>Jerry Schuman</h5>
-          <h6>Chief Technology Officer</h6>
+          <h6>Chief Executive Officer</h6>
           <div className='contact-link'>
             <a target="_blank" href='http://linkedin.com/in/jerryschuman'><i className="fa fa-linkedin"></i></a>
             <a target="_blank" href='https://twitter.com/theagent'><i className="fa fa-twitter"></i></a>
@@ -41,7 +29,7 @@ export default React.createClass({
           </div>
         </div>
 
-        <div className='pure-u-1-1 pure-u-lg-1-3 row-1 right-1st'>
+        <div className='pure-u-1-1 pure-u-lg-1-4 team-container'>
           <div className='team-img-container'>
             <img src='images/murphy.jpg'/>
           </div>
@@ -54,18 +42,7 @@ export default React.createClass({
           </div>
         </div>
 
-        <div className='pure-u-1-1 pure-u-lg-1-3 left-1st'>
-          <div className='team-img-container'>
-            <img src='images/mohseni.jpg'/>
-          </div>
-          <h5>Mehrdod Mohseni</h5>
-          <h6>Chief Commercial Officer</h6>
-          <div className='contact-link'>
-            <a target="_blank" href='https://www.linkedin.com/in/mehrdod-mohseni-82463a'><i className="fa fa-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div className='pure-u-1-1 pure-u-lg-1-3'>
+        <div className='pure-u-1-1 pure-u-lg-1-4 team-container'>
           <div className='team-img-container'>
             <img src='images/ramsay.jpg'/>
           </div>
@@ -76,7 +53,7 @@ export default React.createClass({
           </div>
         </div>
 
-        <div className='pure-u-1-1 pure-u-lg-1-3 right-1st'>
+        <div className='pure-u-1-1 pure-u-lg-1-4 team-container'>
           <div className='team-img-container'>
             <img src='images/heyeck.jpg'/>
           </div>

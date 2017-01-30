@@ -18,7 +18,7 @@ export default React.createClass({
         title: 'National Space Weather Action Plan',
         subTitle: ' Federal implementation approach for the National Space Weather Strategy',
         date: 'October 2015',
-        url: 'https://www.whitehouse.gov/sites/default/files/microsites/ostp/final_nationalspaceweatheractionplan_20151028.pdf'
+        url: 'https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/final_nationalspaceweatheractionplan_20151028.pdf'
       }
     ];
 

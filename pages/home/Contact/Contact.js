@@ -33,7 +33,7 @@ export default React.createClass({
         <div className='pure-u-1-1 pure-u-lg-10-24'>
           <div className='contact-item'>
             <i className="fa fa-map-marker"></i>
-            <h6>31910 Del Obispo, Suite 100<br/>San Juan Capistrano, CA 92675</h6>
+            <h6>2150 Park Place, Suite 100<br/>El Segundo, CA 90245</h6>
           </div>
           <div className='contact-item'>
             <i className="fa fa-envelope-o"></i>
@@ -41,7 +41,7 @@ export default React.createClass({
           </div>
           <div className='contact-item'>
             <i className="fa fa-phone"></i>
-            <h6>949.373.9751</h6>
+            <h6>707.901.7464</h6>
           </div>
         </div>
       </Element>

@@ -40,3 +40,7 @@ credentials.js
 #Joshs backup deploy script
 static/aws-credentials.json
 static/aws-upload.conf.js
+
+
+*.DS_Store
+*.DS_Store
