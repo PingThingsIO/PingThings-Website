@@ -42,29 +42,6 @@ export default React.createClass({
           </div>
         </div>
 
-        <div className='pure-u-1-1 pure-u-lg-1-4 team-container'>
-          <div className='team-img-container'>
-            <img src='images/ramsay.jpg'/>
-          </div>
-          <h5>Stewart Ramsay</h5>
-          <h6>Advisory Board</h6>
-          <div className='contact-link'>
-            <a target="_blank" href='https://www.linkedin.com/pub/stewart-ramsay/6/bb5/a46'><i className="fa fa-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div className='pure-u-1-1 pure-u-lg-1-4 team-container'>
-          <div className='team-img-container'>
-            <img src='images/heyeck.jpg'/>
-          </div>
-          <h5>Mike Heyeck</h5>
-          <h6>Advisory Board</h6>
-          <div className='contact-link'>
-            <a target="_blank" href='https://www.linkedin.com/pub/michael-heyeck/14/91/4bb'><i className="fa fa-linkedin"></i></a>
-          </div>
-
-        </div>
-
       </Element>
 
     )
