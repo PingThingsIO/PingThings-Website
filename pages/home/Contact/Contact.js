@@ -37,7 +37,7 @@ export default React.createClass({
           </div>
           <div className='contact-item'>
             <i className="fa fa-envelope-o"></i>
-            <h6><a href='mailto:info@pingthings.com'>info@pingthings.com</a></h6>
+            <h6><a href='mailto:info@pingthings.io'>info@pingthings.io</a></h6>
           </div>
           <div className='contact-item'>
             <i className="fa fa-phone"></i>
