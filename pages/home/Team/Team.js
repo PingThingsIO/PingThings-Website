@@ -21,7 +21,7 @@ export default React.createClass({
             <img src='images/schuman.jpg'/>
           </div>
           <h5>Jerry Schuman</h5>
-          <h6>Chief Executive Officer</h6>
+          <h6>Co - Chief Executive Officer</h6>
           <div className='contact-link'>
             <a target="_blank" href='http://linkedin.com/in/jerryschuman'><i className="fa fa-linkedin"></i></a>
             <a target="_blank" href='https://twitter.com/theagent'><i className="fa fa-twitter"></i></a>
@@ -34,7 +34,7 @@ export default React.createClass({
             <img src='images/murphy.jpg'/>
           </div>
           <h5>Sean Patrick Murphy</h5>
-          <h6>Chief Data Scientist</h6>
+          <h6>Co - Chief Executive Officer</h6>
           <div className='contact-link'>
             <a target="_blank" href='https://www.linkedin.com/in/seanpatrickmurphy1'><i className="fa fa-linkedin"></i></a>
             <a target="_blank" href='https://twitter.com/sayhitosean'><i className="fa fa-twitter"></i></a>
