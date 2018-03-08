@@ -9,7 +9,7 @@
 .section-story {
   margin-bottom: 0;
   text-align: center;
-  background: url('../../static/images/main-bg/circle_bg.png');
+  // background: url('../../static/images/main-bg/circle_bg.png');
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -512,17 +512,14 @@
 }
 
 .section-about {
-  .left-text {
+  .center-text {
     margin: 0 135px;
     margin-bottom: 0px;
-    h4 {
-      border-left: 2px solid $orange-color;
-    }
     p {
-      padding-left: 40px;
-      margin-left: 40px;
+      padding-left: 0;
+      margin: 1em 0 1em 40px;
       font-size: 16px;
-      margin-right: 27%;
+      text-align: left;
     }
     @media (max-width: $pure-lg) { p {margin-right: 0;} }
     button {

@@ -4,6 +4,7 @@
     "__DEV__": true
   },
   "rules": {
+    "quotes": [2, "double"],
     "react/jsx-quotes": 0,
     "jsx-quotes": [2, "prefer-double"]
   }
