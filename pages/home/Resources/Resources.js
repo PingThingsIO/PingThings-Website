@@ -7,7 +7,7 @@ const NavTo  = Scroll.Link;
 const pubDate = [
   {
     title: 'Data and Electric Power',
-    subTitle: 'From Deterministic Machines to Probablistic Systems in Traditional Engineering',
+    subTitle: 'From Deterministic Machines to Probabilistic Systems in Traditional Engineering',
     date: 'February 2016',
     url: 'http://www.oreilly.com/data/free/data-and-electric-power.csp'
   },{
@@ -58,7 +58,7 @@ export default class extends React.Component {
         <div className='pure-u-1-1 center-text'>
           <h4>Publications and Resources</h4>
           <hr/>
-          <p>See the documents below for a sampling of some of our latest research and work. More documents will be added soon.</p>
+          <p>See the documents below for a sampling of some of our research and work.</p>
         </div>
 
         <div className='publications-container pure-u-1-1'>
