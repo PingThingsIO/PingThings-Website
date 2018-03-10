@@ -17,7 +17,7 @@ export default React.createClass({
           <div className='scroll-container'>
             <NavTo activeClass="active" to="about" spy={true} smooth={true} duration={750}>
               <div className='down-scroll animated bounceIn'>
-                <i className="fa fa-angle-down"></i>
+                <i className="far fa-angle-down"></i>
               </div>
             </NavTo>
           </div>

@@ -17,7 +17,7 @@ export default class extends React.Component {
 
         <div className="blocks-container">
           <div className="block pure-u-lg-1-4 pure-u-1-1 animated rotateInDownRight">
-            <i className="fa fa-rocket" />
+            <i className="fas fa-rocket"></i>
             <h5>High Performance</h5>
             <p>
               Store more data and query it faster than any competitor. Make
@@ -26,7 +26,7 @@ export default class extends React.Component {
           </div>
 
           <div className="block pure-u-lg-1-4 pure-u-1-1 animated rotateInDownRight">
-            <i className="fa fa-wrench" />
+            <i className="fas fa-wrench"></i>
             <h5>Extensible</h5>
             <p>
               Use the best tools available. We provide a rock solid storage and
@@ -36,7 +36,7 @@ export default class extends React.Component {
           </div>
 
           <div className="block pure-u-lg-1-4 pure-u-1-1 animated rotateInDownRight">
-            <i className="fa fa-wrench" />
+            <i className="fab fa-docker"></i>
             <h5>Reliable</h5>
             <p>
               Designed for reliability with a containerized, distributed
@@ -45,7 +45,7 @@ export default class extends React.Component {
           </div>
 
           <div className="block pure-u-lg-1-4 pure-u-1-1 animated rotateInDownRight">
-            <i className="fa fa-wrench" />
+            <i className="fas fa-briefcase"></i>
             <h5>Business Friendly</h5>
             <p>
               Designed for reliability, ease of deployment, rapid Time to Value,

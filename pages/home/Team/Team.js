@@ -23,9 +23,9 @@ export default React.createClass({
           <h5>Jerry Schuman</h5>
           <h6>Co - Chief Executive Officer</h6>
           <div className='contact-link'>
-            <a target="_blank" href='http://linkedin.com/in/jerryschuman'><i className="fa fa-linkedin"></i></a>
-            <a target="_blank" href='https://twitter.com/theagent'><i className="fa fa-twitter"></i></a>
-            <a target="_blank" href='mailto:jerry@pingthings.io'><i className="fa fa-envelope"></i></a>
+            <a target="_blank" href='http://linkedin.com/in/jerryschuman'><i className="fab fa-linkedin"></i></a>
+            <a target="_blank" href='https://twitter.com/theagent'><i className="fab fa-twitter"></i></a>
+            <a target="_blank" href='mailto:jerry@pingthings.io'><i className="far fa-envelope"></i></a>
           </div>
         </div>
 
@@ -36,9 +36,9 @@ export default React.createClass({
           <h5>Sean Patrick Murphy</h5>
           <h6>Co - Chief Executive Officer</h6>
           <div className='contact-link'>
-            <a target="_blank" href='https://www.linkedin.com/in/seanpatrickmurphy1'><i className="fa fa-linkedin"></i></a>
-            <a target="_blank" href='https://twitter.com/sayhitosean'><i className="fa fa-twitter"></i></a>
-            <a target="_blank" href='mailto:sean@pingthings.io'><i className="fa fa-envelope"></i></a>
+            <a target="_blank" href='https://www.linkedin.com/in/seanpatrickmurphy1'><i className="fab fa-linkedin"></i></a>
+            <a target="_blank" href='https://twitter.com/sayhitosean'><i className="fab fa-twitter"></i></a>
+            <a target="_blank" href='mailto:sean@pingthings.io'><i className="far fa-envelope"></i></a>
           </div>
         </div>
 

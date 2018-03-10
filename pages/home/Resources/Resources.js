@@ -41,7 +41,7 @@ export default React.createClass({
                 <h3>{data.title}</h3>
                 <p>{data.subTitle}</p>
                 <div className='date-container'>
-                  <p><i className='fa fa-calendar'></i>{data.date}</p>
+                  <p><i className="far fa-calendar"></i>{data.date}</p>
                 </div>
                 <div className='more'>MORE</div>
               </div>
