@@ -2,28 +2,21 @@ import React from 'react';
 
 import './Burger.scss';
 
-export default class extends React.Component {
-  displayName =  'Burger';
-
-  getInitialState () {
-    return {
-      menu: this.props.menu
-    };
-  },
+export default class Burger extends React.Component {
+  state = { menu: this.props.menu };
 
   componentDidUpdate () {
     if (this.props.menu !== this.state.menu) {
       this.setState({menu: this.props.menu});
     }
-  },
+  }
 
-
-  handleOnClick (event) {
+  handleOnClick = (event) => {
     let state = 'is-open';
     if (this.state.menu === 'is-open') { state = 'is-closed'; }
     this.props.handleClick(state)
     this.setState({menu: state});
-  },
+  }
 
   render() {
     return (
