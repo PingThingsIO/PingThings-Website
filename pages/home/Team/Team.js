@@ -11,7 +11,7 @@ const team_members = [
     linkedin: 'jerryschuman',
     twitter: 'theagent',
     email: 'jerry@pingthings.io',
-    imageLink: 'schuman.jpg',
+    imageLink: 'schuman.png',
   },
   {
     name: 'Sean Patrick Murphy',
@@ -19,24 +19,24 @@ const team_members = [
     linkedin: 'seanpatrickmurphy1',
     twitter: 'sayhitosean',
     email: 'sean@pingthings.io',
-    imageLink: 'murphy.jpg',
+    imageLink: 'murphy.png',
   },
-  // {
-  //   name: "Adam Carte",
-  //   title: "Chairman of the Board",
-  //   linkedin: "adamcarte",
-  //   twitter: null,
-  //   email: "adam@pingthings.io",
-  //   imageLink: "carte.jpg",
-  // },
-  // {
-  //   name: "Michael Andersen",
-  //   title: "Chief Technology Architect",
-  //   linkedin: null,
-  //   twitter: null,
-  //   email: "michael@pingthings.io",
-  //   imageLink: "andersen.jpg",
-  // },
+  {
+    name: "Adam Carte",
+    title: "Chairman of the Board",
+    linkedin: "adamcarte",
+    twitter: null,
+    email: "adam@pingthings.io",
+    imageLink: "carte.png",
+  },
+  {
+    name: "Michael Andersen",
+    title: "Chief Technology Architect",
+    linkedin: null,
+    twitter: null,
+    email: "michael@pingthings.io",
+    imageLink: "andersen.png",
+  },
 ];
 
 const TeamMember = (info) => {
@@ -65,7 +65,7 @@ const TeamMember = (info) => {
     </a>
   );
   return (
-    <div className='pure-u-1-2 pure-u-lg-1-4 team-container'>
+    <div className='pure-u-1-2 pure-u-md-1-4 team-container'>
       <div className='team-img-container'>
         <img src={`images/${info.imageLink}`}/>
       </div>
