@@ -30,10 +30,15 @@ export default React.createClass({
 
       <Element name="products" id='products' className='section-products _section pure-g'>
 
-        <div className='pure-u-1-1 center-text'>
+        <div className='pure-u-1-1 left-text'>
           <h4>Our Products</h4>
-          <hr/>
-          <p>Decades of experience with electric system relays, and a few years of experience with phasor measurement unit monitoring, suggests that different grid events exhibit distinct patterns or “signatures” as seen through voltage, power, frequency, or other monitored evidence. While the specific characteristics of a specific event such as a tree-to- powerline contact may vary, the overall signature or pattern for a specific signature tends to be remarkably consistent across the grid, and these patterns can be used for forensic analysis and, in some cases, for predictive diagnostics and asset management. In the case of Geomagnetically-Induced Currents (GICs) caused by GMD events, the GICs drive reactive power responses in substation transformers that can be detected by PMUs, and that those responses may create a distinctive signature that could be used to create GMD-GIC alerts.</p>
+          <p>PredictiveGrid™ is an Advanced Sensor Analytics Platform (ASAP) that enables data science and machine learning on the vast amount of sensor data available to utilities.</p>
+
+          <p>At its most basic, an ASAP is a combination of a data infrastructure and an integrated set of user facing tools. The data infrastructure ingests sensor data, stores it, and allows authorized applications to access it. The user facing tools in an ASAP make analysis, visualization, and AI development possible.</p>
+          
+          <p>PredictiveGrid™ leverages a high performance data infrastructure developed at UC Berkeley with DOE funds. It is capable of ingesting 10,000’s of high speed sensors in real time. While competing solutions frequently suffer from slow data queries that may take minutes or even an hour to complete, PredictiveGrid allows users to query for years, months, minutes, or microseconds nearly instantly. Benchmarks indicate it is 10-100x faster than competitors.</p>
+          
+          <p>Out of the box, PredictiveGridTM provides a full suite of tools for visualization, analysis, and AI development. We use the same industry standard open source tools for data science found in Silicon Valley such as Jupyter Labs, Google TensorFlow and others. This reduces vendor lock in, makes it easier to hire and retain talent and allows new hires to make an impact quickly. The large open source community makes it easy to find answers and gives PredictiveGridTM customers the option to upgrade to state of the art functionality quickly.</p>
         </div>
 
         <div className='products-container pure-u-1-1'>
