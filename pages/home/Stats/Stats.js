@@ -12,7 +12,7 @@ export default React.createClass({
     const stats = [];
     const datum = [{
       number: '6',
-      className: 'far fa-search',
+      className: 'fas fa-search',
       title: 'Utility Company Proof of Concepts'
     },{
       number: '4',

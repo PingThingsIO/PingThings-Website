@@ -74,7 +74,7 @@
       width: 50px;
       height: 50px;
       margin: 0 auto;
-      i {
+      [class*="fa-"] { /* Select FontAwesome */
         -webkit-transition: all 0.25s ease-in-out;
         -moz-transition: all 0.25s ease-in-out;
         -o-transition: all 0.25s ease-in-out;
@@ -103,7 +103,7 @@
     .stat-container {
       padding: 30px 0 30px 4%;
       text-align: left;
-      i {
+      [class*="fa-"] { /* Select FontAwesome */
         display: inline-block;
         width: 20%;
         font-size: 35px;
@@ -193,10 +193,11 @@
     margin: 10px 0;
     font-size: 15px;
   }
-  i {
+  [class*="fa-"] { /* Select FontAwesome */
     padding: 0 9px;
     color: #424242;
     font-size: 20px;
+    width: unset;
     &:link {
       color: #424242;
     }
@@ -278,7 +279,7 @@
     }
     .date-container {
       padding: 0 0 10px 20px;
-      i {
+      [class*="fa-"] { /* Select FontAwesome */
         padding-right: 10px;
       }
       p {
@@ -334,7 +335,7 @@
         font-family: 'franklin_gothic_fsbook';
         font-weight: 100;
       }
-      i {
+      [class*="fa-"] { /* Select FontAwesome */
         font-size: 60px;
         margin-bottom: 17px;
       }
@@ -420,7 +421,7 @@
   .contact-item {
     text-align: left;
     margin-left: 15%;
-    i {
+    [class*="fa-"] { /* Select FontAwesome */
       color: #10b8ab;
       font-size: 30px;
       display: inline-block;
