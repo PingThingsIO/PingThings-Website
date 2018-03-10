@@ -7,29 +7,25 @@ import Scroll from 'react-scroll';
 const scroll  = Scroll.animateScroll;
 const NavTo   = Scroll.Link;
 
-var Header = class extends React.Component {
+class Header extends React.Component {
 
-  getInitialState () {
-    return {
-      menu: 'is-closed'
-    };
-  },
+  state = { menu: 'is-closed' };
 
-  scrollToTop () {
+  scrollToTop = () => {
     this.closeMenu();
     scroll.scrollToTop();
-  },
+  }
 
-  handleClick (state) {
+  handleClick = (state) => {
     this.closeMenu();
     this.setState({menu: state});
-  },
+  }
 
-  closeMenu () {
+  closeMenu = () => {
     return this.setState({menu: 'is-closed'});
-  },
+  }
 
-  render () {
+  render() {
     return (
       <header>
 
