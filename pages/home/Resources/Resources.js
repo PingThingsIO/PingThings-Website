@@ -4,24 +4,24 @@ import Scroll from 'react-scroll';
 const Element = Scroll.Element;
 const NavTo  = Scroll.Link;
 
+const pubDate = [
+  {
+    title: 'Data and Electric Power',
+    subTitle: 'From Deterministic Machines to Probablistic Systems in Traditional Engineering',
+    date: 'February 2016',
+    url: 'http://www.oreilly.com/data/free/data-and-electric-power.csp'
+  },{
+    title: 'National Space Weather Action Plan',
+    subTitle: ' Federal implementation approach for the National Space Weather Strategy',
+    date: 'October 2015',
+    url: 'https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/final_nationalspaceweatheractionplan_20151028.pdf'
+  },
+];
+
 export default class extends React.Component {
   displayName =  'Home-Resources';
 
   render() {
-    const pubDate = [
-      {
-        title: 'Data and Electric Power',
-        subTitle: 'From Deterministic Machines to Probablistic Systems in Traditional Engineering',
-        date: 'February 2016',
-        url: 'http://www.oreilly.com/data/free/data-and-electric-power.csp'
-      },{
-        title: 'National Space Weather Action Plan',
-        subTitle: ' Federal implementation approach for the National Space Weather Strategy',
-        date: 'October 2015',
-        url: 'https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/final_nationalspaceweatheractionplan_20151028.pdf'
-      }
-    ];
-
     const publications = [];
     for (var i = 0; i < pubDate.length; i++) {
       const unIndexed = i + 1;
@@ -56,7 +56,7 @@ export default class extends React.Component {
       <Element name="resources" className='section-resources _section pure-g'>
 
         <div className='pure-u-1-1 center-text'>
-          <h4>Latest Publications and Resources</h4>
+          <h4>Publications and Resources</h4>
           <hr/>
           <p>See the documents below for a sampling of some of our latest research and work. More documents will be added soon.</p>
         </div>
