@@ -2,8 +2,8 @@ import React from 'react';
 
 import './Burger.scss';
 
-export default React.createClass({
-  displayName: 'Burger',
+export default class extends React.Component {
+  displayName =  'Burger';
 
   getInitialState () {
     return {
@@ -53,5 +53,4 @@ export default React.createClass({
       </div>
     )
   }
-
-});
+};

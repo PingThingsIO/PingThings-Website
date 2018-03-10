@@ -7,7 +7,7 @@ import Scroll from 'react-scroll';
 const scroll  = Scroll.animateScroll;
 const NavTo   = Scroll.Link;
 
-var Header = React.createClass({
+var Header = class extends React.Component {
 
   getInitialState () {
     return {
@@ -59,7 +59,6 @@ var Header = React.createClass({
       </header>
     );
   }
-
-})
+}
 
 export default Header;

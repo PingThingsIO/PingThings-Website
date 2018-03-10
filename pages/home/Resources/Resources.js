@@ -4,8 +4,8 @@ import Scroll from 'react-scroll';
 const Element = Scroll.Element;
 const NavTo  = Scroll.Link;
 
-export default React.createClass({
-  displayName: 'Home-Resources',
+export default class extends React.Component {
+  displayName =  'Home-Resources';
 
   render() {
     const pubDate = [
@@ -68,5 +68,4 @@ export default React.createClass({
       </Element>
     )
   }
-
-});
+};

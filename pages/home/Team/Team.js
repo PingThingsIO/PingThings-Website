@@ -4,8 +4,8 @@ import Scroll from 'react-scroll';
 const Element = Scroll.Element;
 const NavTo  = Scroll.Link;
 
-export default React.createClass({
-  displayName: 'Home-Team',
+export default class extends React.Component {
+  displayName =  'Home-Team';
 
   render() {
     return (
@@ -46,5 +46,5 @@ export default React.createClass({
 
     )
   }
+};
 
-});
