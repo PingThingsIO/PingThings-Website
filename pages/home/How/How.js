@@ -16,7 +16,7 @@ export default class extends React.Component {
         </div>
 
         <div className="blocks-container">
-          <div className="block pure-u-lg-1-4 pure-u-1-1 animated rotateInDownRight">
+          <div className="block pure-u-sm-1-2 pure-u-1-1 animated rotateInDownRight">
             <i className="fas fa-rocket"></i>
             <h5>High Performance</h5>
             <p>
@@ -25,7 +25,7 @@ export default class extends React.Component {
             </p>
           </div>
 
-          <div className="block pure-u-lg-1-4 pure-u-1-1 animated rotateInDownRight">
+          <div className="block pure-u-sm-1-2 pure-u-1-1 animated rotateInDownRight">
             <i className="fas fa-wrench"></i>
             <h5>Extensible</h5>
             <p>
@@ -35,7 +35,7 @@ export default class extends React.Component {
             </p>
           </div>
 
-          <div className="block pure-u-lg-1-4 pure-u-1-1 animated rotateInDownRight">
+          <div className="block pure-u-sm-1-2 pure-u-1-1 animated rotateInDownRight">
             <i className="fab fa-docker"></i>
             <h5>Reliable</h5>
             <p>
@@ -44,7 +44,7 @@ export default class extends React.Component {
             </p>
           </div>
 
-          <div className="block pure-u-lg-1-4 pure-u-1-1 animated rotateInDownRight">
+          <div className="block pure-u-sm-1-2 pure-u-1-1 animated rotateInDownRight">
             <i className="fas fa-briefcase"></i>
             <h5>Business Friendly</h5>
             <p>
@@ -56,4 +56,5 @@ export default class extends React.Component {
       </Element>
     );
   }
-});
+}
+
