@@ -215,6 +215,11 @@
     padding-top: 0;
   }
   .publications-container {
+    @media (min-width: $pure-lg) {
+      .pub-container {
+        margin-bottom: 50px;
+      }
+    }
     a {
       &:link {
         text-decoration: none;

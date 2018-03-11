@@ -79,7 +79,8 @@ const TeamMember = (info) => {
     </div>
   );
 };
-
+//Since this is entirely static, do it outside of the render function
+const TeamBios = team_members.map(info => TeamMember(info) )
 export default class extends React.Component {
   displayName = 'Home-Team';
 
@@ -92,7 +93,7 @@ export default class extends React.Component {
           <hr/>
         </div>
 
-        {team_members.map(info => TeamMember(info) )}
+        {TeamBios}
 
       </Element>
 
