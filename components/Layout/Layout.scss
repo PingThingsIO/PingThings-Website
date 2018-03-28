@@ -90,7 +90,19 @@
   }
 }
 
-.section-stats {
+div.section-quote {
+  background: url('../../static/images/orange_bg.png') no-repeat center center;
+  background-size: auto 100%;
+  padding: 40px 0;
+  @media (min-width: 1330px) {background-size: 100%;}  
+
+  h2, h3 {
+    font-weight: 100;
+    font-size: 20px;
+  }
+}
+
+.section-estats {
   text-align: center;
   background: url('../../static/images/orange_bg.png') no-repeat center center;
   background-size: 100%;
@@ -398,7 +410,7 @@
   }
 }
 
-.section-recommendation {
+.section-recommendation, .section-quote {
   margin: 50px 0;
   padding: 100px 0;
   color: #fff;

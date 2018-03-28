@@ -4,7 +4,7 @@ import StorySection from './home/Story';
 import AboutSection from './home/About';
 import HowSection from './home/How';
 import RecommendationSection from './home/Recommendation';
-import StatsSection from './home/Stats';
+import QuoteSection from './home/Quote';
 import ProductsSection from './home/Products';
 import TeamSection from './home/Team';
 import ResourcesSection from './home/Resources';
@@ -29,7 +29,7 @@ export default class extends Component {
 
         <HowSection />
 
-        <StatsSection />
+        <QuoteSection />
 
         <ProductsSection />
 
