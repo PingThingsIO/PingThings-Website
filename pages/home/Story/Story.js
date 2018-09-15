@@ -4,8 +4,8 @@ import Scroll from 'react-scroll';
 const Element = Scroll.Element;
 const NavTo  = Scroll.Link;
 
-export default React.createClass({
-  displayName: 'Home-Story',
+export default class extends React.Component {
+  displayName =  'Home-Story';
 
   render() {
     return (
@@ -13,11 +13,11 @@ export default React.createClass({
       <Element name='top' className='_section section-story'>
         <div className='center-text text-hero'>
           <h1 className='animated fadeIn'>Welcome to the PredictiveGrid<span className='trademark'>&trade;</span></h1>
-          <p className='animated fadeIn'>The grid is in a state of turmoil with the advent of distributed generation, concerns about cybersecurity and the threat of another natural disaster. Wide area situational awareness demands that you know about something before it’s about to happen. Welcome to the PredictiveGrid™. PingThings brings best practices regarding big data with our in-depth understanding of real time sensor data, machine learning techniques and deploying scalable enterprise class systems.</p>
+          <p className='animated fadeIn'>Our AI platform for sensor data transforms today’s Smart Grid into tomorrow’s Neural Grid. Data Science and AI thrive in complex domains with massive data. The electrical grid is the most complex machine ever built, and utilities are awash in data. Navigant estimates the "Neural Grid" to be a staggering $3.8 trillion market. PingThings is helping our partners accelerate this change and reap the rewards of this transformation.</p>
           <div className='scroll-container'>
             <NavTo activeClass="active" to="about" spy={true} smooth={true} duration={750}>
               <div className='down-scroll animated bounceIn'>
-                <i className="fa fa-angle-down"></i>
+                <i className="fas fa-angle-down"></i>
               </div>
             </NavTo>
           </div>
@@ -26,5 +26,4 @@ export default React.createClass({
 
     )
   }
-
-});
+};

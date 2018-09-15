@@ -4,8 +4,8 @@ import Scroll from 'react-scroll';
 const Element = Scroll.Element;
 const NavTo  = Scroll.Link;
 
-export default React.createClass({
-  displayName: 'Home-Contact',
+export default class extends React.Component {
+  displayName =  'Home-Contact';
 
   render() {
     return (
@@ -32,20 +32,19 @@ export default React.createClass({
         </div>
         <div className='pure-u-1-1 pure-u-lg-10-24'>
           <div className='contact-item'>
-            <i className="fa fa-map-marker"></i>
+            <i className="fas fa-map-marker-alt"></i>
             <h6>2150 Park Place, Suite 100<br/>El Segundo, CA 90245</h6>
           </div>
           <div className='contact-item'>
-            <i className="fa fa-envelope-o"></i>
+            <i className="far fa-envelope"></i>
             <h6><a href='mailto:info@pingthings.io'>info@pingthings.io</a></h6>
           </div>
           <div className='contact-item'>
-            <i className="fa fa-phone"></i>
+            <i className="fas fa-phone"></i>
             <h6>707.901.7464</h6>
           </div>
         </div>
       </Element>
     )
   }
-
-});
+};
